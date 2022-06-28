@@ -28,16 +28,23 @@
       <div class="nav__menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#about" class="nav__link active-link">
+            <a href="#home" class="nav__link active-link">
               <i class='bx bx-home-alt-2'></i>
-              <span>О нас</span>
+              <span>Главная</span>
             </a>
           </li>
 
           <li class="nav__item">
-            <a href="#catalog" class="nav__link">
-              <i class='bx bx-award'></i>
+            <a href="#popular" class="nav__link">
+              <i class='bx bx-building-house'></i>
               <span>Каталог</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#value" class="nav__link">
+              <i class='bx bx-award'></i>
+              <span>Этапы работы</span>
             </a>
           </li>
 
@@ -47,29 +54,232 @@
               <span>Контакты</span>
             </a>
           </li>
-
-          <li class="nav__item">
-            <a href="#work" class="nav__link">
-              <i class='bx bx-building-house'></i>
-              <span>Этапы работы</span>
-            </a>
-          </li>
         </ul>
       </div>
-
-    </nav>
 
   </header>
 
   <!--==================== MAIN ====================-->
   <main class="main">
     <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="container grid">
+        <div class="home__data">
+          <img class="home__logo" src="/assets/img/logo1_1_1.png" alt="logo">
+          <h1 class="home__title">ООО "НОВА"</h1>
+          <p class="home__subtitle">Надежный поставщик</p>
+          <h3 class="home__subscribe">Оптовая продажа нефтепродуктов, бензина, дизеля по ЮФО</h3>
+          <button class="home__button button">Бесплатная консультация</button>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== INFO ====================-->
+    <section class="info section">
+      <div class="container grid">
+        <a href="tel:79182309900" class="info__tel">+7 (918) 230-99-00</a>
+        <p class="info__time">ежедневно с 9:00 до 18:00</p>
+        <div class="info__data">
+          <button class="info__button button">
+            <i class='bx bx-phone'></i>
+            <span>Написать в WhatsApp</span>
+          </button>
+          <button class="info__button button">
+            <i class='bx bx-phone'></i>
+            <span>Написать в Telegram</span>
+          </button>
+          <button class="info__button button">
+            <i class='bx bx-phone'></i>
+            <span>Написать на Email</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+
+    <section class="about section">
+      <div class="container grid">
+        <h3 class="about__title section__title">О компании</h3>
+        <p class="about__subtitle">Мы стремимся предоставлять качественные услуги, и с гордостью можем сказать, что у
+          нас это отлично получается. Наш круг партнеров необычайно широк, в него входят как частные лица, так и крупные
+          оптовики.
+          Обратившись однажды за нашими услугами, они по-настоящему оценили, насколько качественно мы выполняем свою
+          работу,
+          что и послужило мотивацией долгосрочного сотрудничества с нами.</p>
+        <div class="about__data">
+
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__circle">
+                <img class="about__img" src="/assets/img/time2.png" alt="Время">
+              </div>
+            </div>
+            <h4 class="about__data-title">Скорость</h4>
+            <p class="about__data-subtitle">Мы гарантируем быстрое и качественное обслуживание</p>
+          </div>
+
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__circle">
+                <img class="about__img" src="/assets/img/quality2.png" alt="Качество">
+              </div>
+            </div>
+            <h4 class="about__data-title">Качество</h4>
+            <p class="about__data-subtitle">За качествоим наших услуг стоит многолетний опыт</p>
+          </div>
+
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__circle">
+                <img class="about__img" src="/assets/img/price2.png" alt="Время">
+              </div>
+            </div>
+            <h4 class="about__data-title">Цены</h4>
+            <p class="about__data-subtitle">Гибкие цены устроят каждого покупателя</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CATALOG ====================-->
+
+    <section class="catalog section">
+      <div class="container grid">
+        <h3 class="catalog__title section__title">Наш каталог</h3>
+        <p class="catalog__subtitle">Мы предлагаем следующую продукцию:</p>
+
+        <div class="catalog__data">
+          <div class="catalog__item">
+            <div class="catalog__image">
+              <img src="/assets/img/benzin.png" alt="мазут" class="catalog__img">
+            </div>
+            <h4 class="catalog__item_title">Бензин</h4>
+            <ul class="catalog__list">
+              <li>АИ-92-К5</li>
+              <li>АИ-95-К5</li>
+              <li>АИ-98-К5</li>
+              <li>АИ-100-К5</li>
+            </ul>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__image">
+              <img src="/assets/img/distoplivo.png" alt="мазут" class="catalog__img">
+            </div>
+            <h4 class="catalog__item_title">Дизельное топливо</h4>
+            <ul class="catalog__list">
+              <li>ЕВРО, летнее</li>
+              <li>ЕВРО, зимнее</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+
+          <div class="catalog__item">
+            <div class="catalog__image">
+              <img src="/assets/img/mazut.png" alt="мазут" class="catalog__img">
+            </div>
+            <h4 class="catalog__item_title">Мазут</h4>
+            <ul class="catalog__list">
+              <li>Топочный мазут</li>
+              <li>Крекинг-мазут</li>
+              <li>Флотский мазут</li>
+              <li>&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==================== HOW-WORK ====================-->
+
+    <section class="how-work section">
+      <div class="container grid">
+        <h3 class="how-work__title section__title">Этапы работы</h3>
+        <p class="how-work__subtitle">Как мы работаем</p>
+        <div class="how-work__data">
+
+          <div class="how-work__item">
+            <div class="how-work__image">
+              <div class="how-work__s-circle">1</div>
+              <div class="how-work__b-circle">
+                <img class="how-work__img" src="/assets/img/sh1.svg" alt="Заявка">
+              </div>
+            </div>
+            <h4 class="how-work__data-title">Оформление заявки</h4>
+            <p class="how-work__data-subtitle">Позвоните нам по телефону или оставьте заявку на сайте</p>
+          </div>
+
+          <div class="how-work__item">
+            <div class="how-work__image">
+              <div class="how-work__s-circle">2</div>
+              <div class="how-work__b-circle">
+                <img class="how-work__img" src="/assets/img/sh2.svg" alt="Договор">
+              </div>
+            </div>
+            <h4 class="how-work__data-title">Договор и оплата</h4>
+            <p class="how-work__data-subtitle">Подписываем договор и предоставляем все документы на оплачивание наших
+              услуг</p>
+          </div>
+
+          <div class="how-work__item">
+            <div class="how-work__image">
+              <div class="how-work__s-circle">3</div>
+              <div class="how-work__b-circle">
+                <img class="how-work__img" src="/assets/img/sh3.svg" alt="Доставка">
+              </div>
+            </div>
+            <h4 class="how-work__data-title">Доставка топлива</h4>
+            <p class="how-work__data-subtitle">Обговариваем детали доставки и доставляем наши продукты на ваше
+              предприятие</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <!--==================== FOOTER ====================-->
   <footer class="footer section">
+    <div class="container grid">
+      <h3 class="footer__title section__title">Контакты</h3>
+      
+      <div class="footer__data">
+        <div class="footer__contacts">
+          <a href="tel:79182309900" class="footer__tel">
+            <i class='bx bx-building-house'></i>
+            <span>+7 (918) 230-99-00</span>
+          </a>
+          <a href="mailto:info@novallc.ru" class="footer__email">
+            <i class='bx bx-building-house'></i>
+            <span>info@novallc.ru</span>
+          </a>
+          <p class="footer__time">
+            <i class='bx bx-building-house'></i>
+            <span>ежедневно с 9:00 до 18:00</span>
+          </p>
+          <p class="footer__adress">
+            <i class='bx bx-building-house'></i>
+            <span>115304, Москва, ул. Кантемировская, д.3 к.3, помещ. комната 1</span>
+          </p>
+        </div>
 
+        <div class="footer__feedback">
+          <h4 class="footer__form-title">Оставьте заявку</h4>
+          <form action="" class="footer__form">
+            <input type="text" placeholder="Ваше имя" value="" class="form__name-input" required>
+            <input type="tel" placeholder="Телефон" value="" class="form__tel-input" required>
+            <input type="email" placeholder="Email" value="" class="form__email-input" required>
+            <button class="button button__form">Отправить</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
   </footer>
 
 
