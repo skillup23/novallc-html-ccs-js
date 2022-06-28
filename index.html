@@ -35,15 +35,15 @@
           </li>
 
           <li class="nav__item">
-            <a href="#popular" class="nav__link">
-              <i class='bx bx-building-house'></i>
+            <a href="#catalog" class="nav__link">
+              <i class='bx bx-receipt'></i>
               <span>Каталог</span>
             </a>
           </li>
 
           <li class="nav__item">
-            <a href="#value" class="nav__link">
-              <i class='bx bx-award'></i>
+            <a href="#work" class="nav__link">
+              <i class='bx bx-briefcase'></i>
               <span>Этапы работы</span>
             </a>
           </li>
@@ -69,7 +69,7 @@
           <h1 class="home__title">ООО "НОВА"</h1>
           <p class="home__subtitle">Надежный поставщик</p>
           <h3 class="home__subscribe">Оптовая продажа нефтепродуктов, бензина, дизеля по ЮФО</h3>
-          <button class="home__button button">Бесплатная консультация</button>
+          <a href="#contact" class="home__button button">Бесплатная консультация</a>
         </div>
       </div>
     </section>
@@ -81,15 +81,15 @@
         <p class="info__time">ежедневно с 9:00 до 18:00</p>
         <div class="info__data">
           <button class="info__button button">
-            <i class='bx bx-phone'></i>
+            <i class='bx bxl-whatsapp'></i>
             <span>Написать в WhatsApp</span>
           </button>
           <button class="info__button button">
-            <i class='bx bx-phone'></i>
+            <i class='bx bxl-telegram'></i>
             <span>Написать в Telegram</span>
           </button>
           <button class="info__button button">
-            <i class='bx bx-phone'></i>
+            <i class='bx bx-envelope'></i>
             <span>Написать на Email</span>
           </button>
         </div>
@@ -145,7 +145,7 @@
 
     <!--==================== CATALOG ====================-->
 
-    <section class="catalog section">
+    <section class="catalog section" id="catalog">
       <div class="container grid">
         <h3 class="catalog__title section__title">Наш каталог</h3>
         <p class="catalog__subtitle">Мы предлагаем следующую продукцию:</p>
@@ -196,7 +196,7 @@
 
     <!--==================== HOW-WORK ====================-->
 
-    <section class="how-work section">
+    <section class="how-work section" id="work">
       <div class="container grid">
         <h3 class="how-work__title section__title">Этапы работы</h3>
         <p class="how-work__subtitle">Как мы работаем</p>
@@ -243,34 +243,37 @@
 
   </main>
 
-  <!--==================== FOOTER ====================-->
-  <footer class="footer section">
+  <!--==================== CONTACT ====================-->
+
+  <section class="contact section" id="contact">
     <div class="container grid">
-      <h3 class="footer__title section__title">Контакты</h3>
-      
-      <div class="footer__data">
-        <div class="footer__contacts">
-          <a href="tel:79182309900" class="footer__tel">
-            <i class='bx bx-building-house'></i>
+
+
+      <div class="contact__data">
+
+        <div class="contact__contacts">
+          <h3 class="contact__title section__title">Контакты</h3>
+          <a href="tel:79182309900" class="contact__tel">
+            <i class='bx bx-phone-call'></i>
             <span>+7 (918) 230-99-00</span>
           </a>
-          <a href="mailto:info@novallc.ru" class="footer__email">
-            <i class='bx bx-building-house'></i>
+          <a href="mailto:info@novallc.ru" class="contact__email">
+            <i class='bx bx-envelope'></i>
             <span>info@novallc.ru</span>
           </a>
-          <p class="footer__time">
-            <i class='bx bx-building-house'></i>
+          <p class="contact__time">
+            <i class='bx bx-time'></i>
             <span>ежедневно с 9:00 до 18:00</span>
           </p>
-          <p class="footer__adress">
-            <i class='bx bx-building-house'></i>
+          <p class="contact__adress">
+            <i class='bx bx-map'></i>
             <span>115304, Москва, ул. Кантемировская, д.3 к.3, помещ. комната 1</span>
           </p>
         </div>
 
-        <div class="footer__feedback">
-          <h4 class="footer__form-title">Оставьте заявку</h4>
-          <form action="" class="footer__form">
+        <div class="contact__feedback">
+          <h4 class="contact__form-title">Оставьте заявку</h4>
+          <form action="" class="contact__form">
             <input type="text" placeholder="Ваше имя" value="" class="form__name-input" required>
             <input type="tel" placeholder="Телефон" value="" class="form__tel-input" required>
             <input type="email" placeholder="Email" value="" class="form__email-input" required>
@@ -278,7 +281,20 @@
           </form>
         </div>
       </div>
-      
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__info container">
+      <span class="footer__copy">
+        &#169; IT KIREEV. Все права защищены
+      </span>
+
+      <div class="footer__privacy">
+        <a href="#" target="_blank">Условия и соглашения</a>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
     </div>
   </footer>
 

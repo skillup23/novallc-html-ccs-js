@@ -204,6 +204,11 @@ button {
 
 
 /* Active link */
+.active-link {
+  background: var(--first-color-alt);
+  color: #fff;
+  box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
+}
 
 
 /*=============== HOME ===============*/
@@ -257,6 +262,7 @@ button {
   background-color: var(--first-color);
   font-size: 1rem;
   font-weight: 500;
+  color: var(--text-color);
   transition: .3s;
 }
 
@@ -281,9 +287,9 @@ button {
 }
 
 .info__data {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .info__button {
@@ -295,6 +301,12 @@ button {
   font-size: 1rem;
   box-shadow: 0 8px 24px hsla(228, 66%, 45%, .15);
   border-radius: 1rem;
+  width: 100%;
+  transition: .3s;
+}
+
+.info__button:hover {
+  background-color: var(--first-color);
 }
 
 .info__button i {
@@ -462,6 +474,7 @@ button {
 .how-work__data-title {
   margin-top: 1rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .how-work__data-subtitle {
@@ -470,70 +483,68 @@ button {
   text-align: center;
 }
 
-/*=============== BUTTON ===============*/
+/*=============== CONTACT ===============*/
 
-
-/*=============== FOOTER ===============*/
-
-.footer {
+.contact {
   background-color: var(--second-color);
   color: var(--text-color-light);
-  padding-bottom: 10rem;
 }
 
-.footer__data {
+.contact__data {
   display: grid;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.footer__contacts {
+.contact__contacts {
   display: grid;
   gap: 1rem;
 }
 
-.footer__contacts a {
-  font-size: 1.5rem;
+.contact__contacts a {
+  font-size: 1.25rem;
   color: var(--text-color-light);
   font-weight: 600;
 }
 
-.footer__time,
-.footer__email,
-.footer__tel,
-.footer__adress {
+.contact__time,
+.contact__email,
+.contact__tel,
+.contact__adress {
   display: flex;
   align-items: center;
 }
 
-.footer__contacts i {
+.contact__contacts i {
   font-size: 1.75rem;
   margin-right: 1rem;
 }
 
-.footer__form-title {
+.contact__form-title {
   font-size: 1.2rem;
 }
 
-.footer__data {
+.contact__data {
   display: grid;
   gap: 3rem;
 }
 
-.footer__form {
+.contact__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.footer__form-title {
+.contact__form-title {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.footer__form input {
+.contact__form input {
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 15px;
+  width: 100%;
 }
 
 .button__form {
@@ -541,12 +552,43 @@ button {
   border-radius: 15px;
   background-color: var(--first-color);
   transition: .3s;
+  width: 100%;
 }
 
 .button__form:hover {
   background-color: var(--first-color-alt);
 }
 
+/*=============== FOOTER ===============*/
+footer {
+  background-color: var(--second-color);
+  color: var(--text-color-light);
+  padding-bottom: 10rem;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.footer__privacy {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copy,
+.footer__privacy a {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color-light);
+}
+
+.footer__privacy {
+  justify-content: center;
+  column-gap: 1.25rem;
+}
 
 
 /*=============== SCROLL BAR ===============*/
@@ -598,7 +640,9 @@ button {
 }
 
 @media screen and (max-width: 320px) {
-
+  .home__button {
+    font-size: 0.9rem;
+  }
 }
 
 /* For medium devices */
@@ -606,10 +650,46 @@ button {
   .nav__menu {
     width: 342px;
   }
+  .info__button {
+    width: 300px;
+  }
+  .contact__form input{
+    width: 400px;
+  }
+  .button__form {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 767px) {
-
+  .about__data,
+  .catalog__data,
+  .how-work__data {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .catalog__item {
+    padding: 1rem;
+    width: 100%;
+  }
+  .contact__data {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact__contacts {
+    align-items: start;
+  }
+  .contact__form input{
+    width: 100%;
+  }
+  .button__form {
+    width: 100%;
+  }
+  .contact__title {
+    margin-bottom: 0;
+  }
+  .contact__form-title {
+    font-size: 1.75rem;
+  }
 }
 
 /* For large devices */
@@ -632,6 +712,51 @@ button {
   .nav__link i{
     display: none;
   }
+
+  .home__logo {
+    margin-top: 4rem;
+  }
+  .home__title {
+    font-size: 3rem;;
+  }
+  .home__subtitle,
+  .home__subscribe {
+    font-size: 1.5rem;
+  }
+  .home__subscribe {
+    margin-top: 2rem;
+    width: 500px;
+  }
+  .home__button {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+  }
+
+  .info__data {
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .info__button {
+    width: 100%;
+  }
+  
+  footer {
+    padding-bottom: 4rem;
+  }
+  .footer__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__privacy {
+    flex-direction: row;
+  }
+
+  .show-scroll {
+    bottom: 1rem;
+  }
 }
 
 @media screen and (min-width: 1040px) {
@@ -645,4 +770,8 @@ button {
   }
 }
 
-@media screen and (min-w
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}
