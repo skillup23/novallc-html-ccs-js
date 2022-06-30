@@ -61,6 +61,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -68,6 +69,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  -webkit-text-size-adjust: none;
 }
 
 h1, h2, h3 {
@@ -85,6 +87,10 @@ a {
   text-decoration: none;
 }
 
+a, label{
+	-webkit-tap-highlight-color: transparent;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -96,6 +102,13 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+}
+
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
 }
 
 
@@ -214,9 +227,9 @@ button {
 /*=============== HOME ===============*/
 .home {
   position:relative;
-  background-image: url(../../assets/img/backgroun-top-main.jpg);
+  background-image: url(../../assets/img/fuel1.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right 35% bottom 45%;
   background-size: cover;
 }
 
@@ -302,6 +315,7 @@ button {
   box-shadow: 0 8px 24px hsla(228, 66%, 45%, .15);
   border-radius: 1rem;
   width: 100%;
+  color: var(--text-color);
   transition: .3s;
 }
 
@@ -553,10 +567,16 @@ button {
   background-color: var(--first-color);
   transition: .3s;
   width: 100%;
+  color: var(--text-color);
 }
 
 .button__form:hover {
   background-color: var(--first-color-alt);
+}
+
+.contact__form input,
+.contact__form button {
+  font-size: 1rem;
 }
 
 /*=============== FOOTER ===============*/
@@ -706,12 +726,20 @@ footer {
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
-  .header{
+  .scroll-header{
     background-color: var(--second-color);
+  }
+
+  .nav__link{
+    font-size: 1.15rem;
   }
   
   .section {
-    padding: 7rem 0 7rem;
+    padding: 8rem 0 8rem;
+  }
+
+  .section .home {
+    padding: 10rem 0 10rem;
   }
 
   .nav{
@@ -739,6 +767,9 @@ footer {
     color: var(--first-color);
   }
 
+  .home {
+    background-position: center;
+  }
   .home__logo {
     margin-top: 4rem;
   }
@@ -760,7 +791,7 @@ footer {
   }
 
   .info__data {
-    margin-top: 2rem;
+    margin-top: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
@@ -769,7 +800,7 @@ footer {
   }
   
   footer {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 7rem;
   }
   .footer__info {
@@ -786,7 +817,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1600px) {
 
 }
 
