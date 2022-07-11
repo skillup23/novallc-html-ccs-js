@@ -91,7 +91,7 @@
         <a href="tel:79182309900" class="info__tel">+7 (918) 230-99-00</a>
         <p class="info__time">ежедневно с 9:00 до 18:00</p>
         <div class="info__data">
-          <a href="https://web.whatsapp.com/send?phone=79182309900" target="_blank" class="info__button button">
+          <a href="https://wa.clck.bar/79182309900" target="_blank" class="info__button button">
             <i class='bx bxl-whatsapp'></i>
             <span>Написать в WhatsApp</span>
           </a>
@@ -284,11 +284,19 @@
 
         <div class="contact__feedback">
           <h4 class="contact__form-title">Оставьте заявку</h4>
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Ваше имя" value="" class="form__name-input" required>
-            <input type="tel" placeholder="Телефон" value="" class="form__tel-input" required>
-            <input type="email" placeholder="Email" value="" class="form__email-input" required>
-            <button class="button button__form">Отправить</button>
+          <form action="#" class="form contact__form" method="POST" enctype="multipart/form-data">
+            <label class="form__label">
+              <input class="form__name-input" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+            </label>
+            <label class="form__label">
+              <input class="form__tel-input" type="tel" data-validate-field="tel" name="Телефон"
+                placeholder="Введите телефон">
+            </label>
+            <label class="form__label">
+              <input class="form__email-input" type="email" data-validate-field="email" name="Email"
+                placeholder="Введите email">
+            </label>
+            <button class="button button__form send-btn">Отправить</button>
           </form>
         </div>
       </div>
@@ -296,6 +304,7 @@
     </div>
   </section>
 
+  <!--==================== FOOTER ====================-->
   <footer>
     <div class="footer__info container">
       <span class="footer__copy">
@@ -314,6 +323,12 @@
   <a href="#" class="scrollup" id="scroll-up">
     <i class='bx bx-chevrons-up'></i>
   </a>
+
+  <!--=============== JUSTVALIDATE ===============-->
+  <script src="assets/js/just-validate3.3.3.min.js"></script>
+
+  <!--=============== INPUTMASK ===============-->
+  <script src="assets/js/inputmask.min.js"></script>
 
   <!--=============== SCROLLREVEAL ===============-->
   <script src="assets/js/scrollreveal.min.js"></script>

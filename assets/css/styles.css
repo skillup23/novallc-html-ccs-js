@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
@@ -109,6 +109,10 @@ button {
 
 input[type=text], input[type=submit], textarea{
 	-webkit-appearance: none;
+}
+
+form label {
+  width: 100%;
 }
 
 
@@ -229,7 +233,7 @@ input[type=text], input[type=submit], textarea{
   position:relative;
   background-image: url(../../assets/img/fuel1.jpg);
   background-repeat: no-repeat;
-  background-position: right 35% bottom 45%;
+  background-position: right 15% bottom 45%;
   background-size: cover;
 }
 
@@ -551,20 +555,31 @@ input[type=text], input[type=submit], textarea{
 
 .contact__form-title {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .contact__form input {
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   border-radius: 15px;
   width: 100%;
+}
+
+.form__label {
+  position: relative;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: -1.5rem;
+  left: 1.4rem;
 }
 
 .button__form {
   padding: 1.5rem;
   border-radius: 15px;
   background-color: var(--first-color);
+  text-align: center;
   transition: .3s;
   width: 100%;
   color: var(--text-color);
@@ -673,8 +688,10 @@ footer {
   .info__button {
     width: 300px;
   }
-  .contact__form input{
+  .contact__form {
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .button__form {
     width: 400px;
