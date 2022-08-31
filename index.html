@@ -10,7 +10,7 @@
   <meta name="format-detection" content="email=no">
 
   <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/img/logo1_1_1.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favikon.png" type="image/x-icon">
 
   <!--=============== BOXICONS ===============-->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -76,8 +76,8 @@
     <section class="home section" id="home">
       <div class="container grid">
         <div class="home__data">
-          <img class="home__logo" src="/assets/img/logo1_1_1.png" alt="logo">
-          <h1 class="home__title">ООО "НОВА"</h1>
+          <img class="home__logo" src="/assets/img/logo-nova.png" alt="logo">
+          <!-- <h1 class="home__title">ООО "НОВА"</h1> -->
           <p class="home__subtitle">Надежный поставщик</p>
           <h3 class="home__subscribe">Оптовая продажа нефтепродуктов, бензина, дизеля по ЮФО</h3>
           <a href="#contact" class="home__button button">Бесплатная консультация</a>
@@ -159,7 +159,7 @@
     <section class="catalog section" id="catalog">
       <div class="container grid">
         <h3 class="catalog__title section__title">Наш каталог</h3>
-        <p class="catalog__subtitle">Мы предлагаем следующую продукцию:</p>
+        <p class="catalog__subtitle">Мы предлагаем следующую продукцию*:</p>
 
         <div class="catalog__data">
           <div class="catalog__item">
@@ -168,10 +168,10 @@
             </div>
             <h4 class="catalog__item_title">Бензин</h4>
             <ul class="catalog__list">
-              <li>АИ-92-К5</li>
-              <li>АИ-95-К5</li>
-              <li>АИ-98-К5</li>
-              <li>АИ-100-К5</li>
+              <li><p>АИ-92-К5</p><p>55 100 ₽</p></li>
+              <li><p>АИ-95-К5</p><p>63 100 ₽</p></li>
+              <li><p>АИ-98-К5</p><p>71 100 ₽</p></li>
+              <li><p>АИ-100-К5</p><p>79 600 ₽</p></li>
             </ul>
           </div>
 
@@ -181,10 +181,10 @@
             </div>
             <h4 class="catalog__item_title">Дизельное топливо</h4>
             <ul class="catalog__list">
-              <li>ЕВРО, летнее</li>
-              <li>ЕВРО, зимнее</li>
-              <li>&nbsp;</li>
-              <li>&nbsp;</li>
+              <li><p>ЕВРО, летнее</p><p>64&nbsp;600&nbsp;₽</p></li>
+              <li><p>ДТ-З-К5</p><p>63 600 ₽</p></li>
+              <li><p>ТН</p><p>58 650 ₽</p></li>
+              <li><p>ТКСО</p><p>57 800 ₽</p></li>
             </ul>
           </div>
 
@@ -192,15 +192,17 @@
             <div class="catalog__image">
               <img src="/assets/img/mazut.png" alt="мазут" class="catalog__img">
             </div>
-            <h4 class="catalog__item_title">Мазут</h4>
+            <h4 class="catalog__item_title">Другие продукты</h4>
             <ul class="catalog__list">
-              <li>Топочный мазут</li>
-              <li>Крекинг-мазут</li>
-              <li>Флотский мазут</li>
+              <li><p>Битум</p><p>29 500 ₽</p></li>
+              <li><p>Газ ПБА</p><p>24 100 ₽</p></li>
+              <li>&nbsp;</li>
               <li>&nbsp;</li>
             </ul>
           </div>
         </div>
+
+        <p class="catalog__snos">*цена указана за тонну</p>
 
       </div>
     </section>
@@ -313,8 +315,8 @@
       </span>
 
       <div class="footer__privacy">
-        <a href="#" target="_blank">Реквизиты организации</a>
-        <a href="#">Политика конфиденциальности</a>
+        <a href="assets/docs/Реквизиты ООО Нова.pdf" target="_blank">Реквизиты организации</a>
+        <a href="/privacy.html">Политика конфиденциальности</a>
       </div>
     </div>
   </footer>

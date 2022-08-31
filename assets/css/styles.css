@@ -230,8 +230,8 @@ form label {
 
 /*=============== HOME ===============*/
 .home {
-  position:relative;
-  background-image: url(../../assets/img/fuel1.jpg);
+  position: relative;
+  background-image: url(../../assets/img/backgroun-top-main.jpg);
   background-repeat: no-repeat;
   background-position: right 15% bottom 45%;
   background-size: cover;
@@ -254,6 +254,10 @@ form label {
   align-items: center;
   z-index: 3;
   color: var(--text-color-light);
+}
+
+.home__logo {
+  width: 300px;
 }
 
 .home__title {
@@ -385,6 +389,12 @@ form label {
 
 .catalog__list li {
   margin-top: .5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__snos {
+  text-align: end;
 }
 
 /*=============== ABOUT ===============*/
@@ -682,6 +692,8 @@ footer {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+
+
   .nav__menu {
     width: 342px;
   }
@@ -789,6 +801,7 @@ footer {
   }
   .home__logo {
     margin-top: 4rem;
+    width: 500px;
   }
   .home__title {
     font-size: 3rem;;
